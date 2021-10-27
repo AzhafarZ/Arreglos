@@ -93,4 +93,5 @@ while opcion != 0: #Permite que los distintos procesos se ejecuten mientras se c
         print("Esa opción no es valida") #Dato de salida
 
     print (interfaz) #Se reinicia el ciclo while
+    opcion = int(input())
 print("Saliendo del programa.")

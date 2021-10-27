@@ -2,15 +2,26 @@
 #Elaborado por Osorio Llerenas Zair.
 #Martes 26 de octubre de 2021.
 import math
-opcion = int(input("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n Ingresa 1 para el capturar los valores. \n Ingresa 2 para el ordenar los valores. \n Ingresa 3 para el imprimir los valores originales. \n Ingresa 4 para imprimir los valores ordenados. \n Ingresa 5 para salir del programa. \n \n °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n"))
+interfaz = """
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+Ingresa 1 para el capturar los valores.
+Ingresa 2 para el ordenar los valores.
+Ingresa 3 para el imprimir los valores originales.
+Ingresa 4 para imprimir los valores ordenados.
+Ingresa 0 para salir del programa.
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+"""
+print (interfaz)
+opcion = int(input())
 #Ciclo repetitivo del menú
-while opcion != 0:
+while opcion !=0:
     #Instalo una estrucutra múltiple, para que el usuario pueda elegir libremente.
     if opcion == 1:
         #Defino la longitud del arreglo mediante la variable de valor entero TAMAÑO.
         print ("¿Cuántos valores desea ingresar?")
-        TAMAÑO = int(input())
-        longitud = [0 for i in range(TAMAÑO)]
+        tamaño = int(input())
+        longitud = [0 for i in range(tamaño)]
         #Ingreso de valores mediante un blucle for.
         for i in range(len(longitud)):
             print("Ingrese el valor número %d: " %(i+1), end="")
@@ -40,8 +51,12 @@ while opcion != 0:
             print("El programa está finalizandose")
         #Evita que el ciclo while sea infinito.
         else:
-                opcion = int(input("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n Ingresa 1 para el capturar los valores. \n Ingresa 2 para el ordenar los valores. \n Ingresa 3 para el imprimir los valores originales. \n Ingresa 4 para imprimir los valores ordenados. \n Ingresa 5 para salir del programa. \n \n °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n"))
+                print (interfaz)
+                opcion = int(input())
 #Evita que el usuario ingrese respuestas no apropiadas.
     else:
         print("Esa opción no es valida")
-    opcion = int(input("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n Ingresa 1 para el capturar los valores. \n Ingresa 2 para el ordenar los valores. \n Ingresa 3 para el imprimir los valores originales. \n Ingresa 4 para imprimir los valores ordenados. \n Ingresa 5 para salir del programa. \n \n °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \n"))
+    print (interfaz)
+    opcion = int(input())
+    
+print("Saliendo del programa.")
